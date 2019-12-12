@@ -1,0 +1,134 @@
+:root {
+    --main-height: 40px;
+    --main-border-rarius: 20px;
+    --main-font-size: 1.5em;
+    --main-padding: 15px;
+  }
+
+*
+{
+    margin: 0;
+    font-family: verdana;
+    box-sizing: border-box;
+}
+
+#container
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 60vmax;
+    background-color: rgb(86, 209, 240);
+    text-align: center; 
+    padding: 15px;
+    border-radius: 50px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-gap: 15px;
+}
+
+#titleP
+{
+    margin-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 2em;
+    color: white;
+    grid-column-start: span 2;
+}
+
+
+#newTaskText
+{
+    width: 100%;
+    font-size: var(--main-font-size);
+    height: var(--main-height);
+    border-radius: var(--main-border-rarius);
+    border: none;
+    outline: none;
+    padding: var(--main-padding);
+}
+
+ul
+{
+    list-style-type: none;
+    grid-column-start: span 2;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+ul,li 
+{
+    margin:0;
+}
+
+li
+{
+    background-color: rgb(168, 238, 255);
+    border-radius: var(--main-border-rarius);
+    font-size: var(--main-font-size);
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: left;
+    padding: 10px;
+    position: relative;
+}
+
+#addTask
+{   
+    display: inline-block;
+    font-size: var(--main-font-size);
+    height: var(--main-height);
+    border-radius: var(--main-border-rarius);
+    border:none;
+    width: 100%;
+    background-color: white;
+    outline: none
+}
+
+#addTask:active
+{
+    background-color: lightgray;
+}
+
+.checkButton
+{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 5px;
+    border-width: 3px;
+    border-radius: 20px;
+    border-color: rgb(19, 255, 98);
+    border-style: solid;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(168, 238, 255);
+    vertical-align: middle;
+    outline: none;
+    right: 7%;
+    top: 10%;
+    position: absolute;
+}
+
+
+
+.removeTask
+{
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #e04747;
+    vertical-align: middle;
+    outline: none;
+    right: 0;
+    top: 10%;
+    position: absolute;
+}
